@@ -23,8 +23,4 @@ export const MenuList = [
     title: "ReactJS",
     url: "/ReactJS",
   },
-  {
-    title: "SignUp",
-    url: "/SignUp",
-  },
 ];
