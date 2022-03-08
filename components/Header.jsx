@@ -11,22 +11,18 @@ const Header = () => {
   };
   console.log(menu);
   return (
-    <div className="flex justify-between bg-black text-white px-5 h-10 w-full ">
-      <div id="logo__container" className="py-2 m-1">
+    <div>
+      <div>
         <Link href={menu[0].url}>
-          <span className="mx-5 hover:cursor-pointer m-1 rounded-lg border-l-2 border-r-2   ">
-            CharInfo
-          </span>
+          <span>CharInfo</span>
         </Link>
       </div>
 
-      <div id="menuList__container">
-        <ul className="flex justify-around w-full ">
+      <div i>
+        <ul>
           {menu.map((item, index) => (
             <Link key={index} href={item.url}>
-              <span className="mx-5 hover:cursor-pointer p-1 m-1 rounded-lg hover:bg-white hover:text-black ease-in-out duration-500 md:gr">
-                {item.title}
-              </span>
+              <span>{item.title}</span>
             </Link>
           ))}
         </ul>

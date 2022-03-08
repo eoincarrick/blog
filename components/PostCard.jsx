@@ -15,15 +15,11 @@ const PostCard = ({ charData }) => {
   };
 
   return (
-    <div className="container py-10">
-      <div className="bg-pink">
-        <div id="card" className="px-10 rounded-lg drop-shadow-lg">
-          <img
-            src={data.image}
-            alt={data.slug}
-            className="object-middle absolute h-80 w-50 rounded-t-lg object-cover shadow-lg lg:rounded-lg"
-          />
-          <div className="h-80 w-30 bg-sky-500"></div>
+    <div>
+      <div>
+        <div id="card">
+          <img src={data.image} alt={data.slug} />
+          <div></div>
         </div>
       </div>
     </div>
