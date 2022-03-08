@@ -4,24 +4,24 @@ export const MenuList = [
     url: "/",
   },
   {
-    title: "About",
-    url: "/About",
+    title: "JavaScript",
+    url: "/JavaScript",
   },
   {
-    title: "Plan",
-    url: "/Plan",
+    title: "Python",
+    url: "/Python",
   },
   {
-    title: "Features",
-    url: "/Features",
+    title: "HTML",
+    url: "/HTML",
   },
   {
-    title: "Demo",
-    url: "/Demo",
+    title: "CSS",
+    url: "/CSS",
   },
   {
-    title: "Contact",
-    url: "/Contact",
+    title: "ReactJS",
+    url: "/ReactJS",
   },
   {
     title: "SignUp",
