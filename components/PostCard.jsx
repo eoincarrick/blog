@@ -37,6 +37,7 @@ const PostCard = ({ charData }) => {
           <div className={css.faIcon} onClick={handleClick}>
             <i>{clicked ? <FaRegEyeSlash /> : <FaRegEye />}</i>
           </div>
+
           <div className={css.imgContainer}>
             <img
               className={`${css.img} ${clicked ? css.noView : css.view}`}

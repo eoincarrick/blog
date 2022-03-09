@@ -30,6 +30,7 @@
 
 .navList {
   margin-right: 3rem;
+  cursor: pointer;
 }
 
 .btn {
