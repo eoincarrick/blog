@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import css from "../styles/PostCard.module.css";
-import Link from "next/link";
+import React, { useState } from 'react';
+import css from '../styles/PostCard.module.css';
+import Link from 'next/link';
 import {
   FaInstagram,
   FaTwitter,
   FaEye,
   FaRegEye,
   FaRegEyeSlash,
-} from "react-icons/fa";
-import moment from "moment";
+} from 'react-icons/fa';
+import moment from 'moment';
 
 const PostCard = ({ data }) => {
   const [clicked, setClicked] = useState(false);
@@ -37,20 +37,20 @@ const PostCard = ({ data }) => {
           <div
             className={`${css.cardDetails} ${clicked ? css.noView : css.view}`}
           >
-            <div className="name">
+            <div className='name'>
               <h3>{data.name}</h3>
               <span className={css.nameAs}>{data.name_as}</span>
             </div>
 
             <div className={css.bio}>{data.short_text}</div>
 
-            <div className="social">
-              <a target="_blank" href={data.ig}>
+            <div className='social'>
+              <a target='_blank' href={data.ig}>
                 <span>
                   <FaInstagram className={css.icon} />
                 </span>
               </a>
-              <a target="_blank" href={data.twitter}>
+              <a target='_blank' href={data.twitter}>
                 <span>
                   <FaTwitter className={css.icon} />
                 </span>
@@ -59,16 +59,15 @@ const PostCard = ({ data }) => {
 
             <div>
               <Link href={`/post/${data.slug}`}>
-                <span className="iconEye">
+                <span className='iconEye'>
                   <FaEye className={css.eye} />
                 </span>
               </Link>
             </div>
             <div>
               <p>
-                Posted on {
-                  moment.data.createdAt()
-                }
+                <strong>Posted on</strong>{' '}
+                {moment(data.createdAt).format('DD MMM, YYYY')}
               </p>
             </div>
           </div>

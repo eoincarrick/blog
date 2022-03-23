@@ -1,4 +1,4 @@
-import { request, gql } from "graphql-request";
+import { request, gql } from 'graphql-request';
 
 const graphqlAPI = process.env.GRAPHQL__KEY;
 
@@ -18,6 +18,7 @@ export const getCharacterDetails = async () => {
           raw
         }
         short_text
+        createdAt
       }
     }
   `;
