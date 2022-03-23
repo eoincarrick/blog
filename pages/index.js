@@ -13,7 +13,7 @@ export default function Home({ data }) {
       </Head>
       <div id="postcard">
         {data.map((char, index) => (
-          <PostCard charData={char} key={index} />
+          <PostCard data={char} key={index} />
         ))}
       </div>
     </div>

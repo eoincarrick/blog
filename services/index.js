@@ -8,15 +8,16 @@ export const getCharacterDetails = async () => {
       characters {
         name
         name_as
-        slug
-        short_text
-        createdAt
         image {
           url
         }
+        slug
+        twitter
+        ig
         content {
           raw
         }
+        short_text
       }
     }
   `;
