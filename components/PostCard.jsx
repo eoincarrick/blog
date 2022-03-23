@@ -64,6 +64,13 @@ const PostCard = ({ data }) => {
                 </span>
               </Link>
             </div>
+            <div>
+              <p>
+                Posted on {
+                  moment.data.createdAt()
+                }
+              </p>
+            </div>
           </div>
         </div>
       </div>
