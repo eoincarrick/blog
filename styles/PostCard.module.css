@@ -1,4 +1,4 @@
-/* .container {
+.container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -133,9 +133,9 @@
 }
 .eye:hover {
   color: rgb(177, 212, 252);
-} */
+} 
 
-/* @media only screen and (max-width: 554px) {
+ @media only screen and (max-width: 554px) {
   .container {
     width: 100%;
     margin: 1rem;
@@ -205,4 +205,4 @@
     margin: 0.3reem;
     z-index: 2;
   }
-} */
+}
