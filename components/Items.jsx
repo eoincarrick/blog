@@ -4,8 +4,9 @@ export const Items = [
     url: '/',
   },
   {
-    title: 'Home',
+    title: 'Categories',
     url: '/',
+    className: 'category',
   },
   {
     title: 'Home',
@@ -14,5 +15,11 @@ export const Items = [
   {
     title: 'Create Account',
     url: '/create-account',
+  },
+];
+
+export const Dropdown = [
+  {
+    name: 'JavaScript',
   },
 ];

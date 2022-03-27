@@ -10,14 +10,15 @@
 And using the display properties 
 */
 .nav {
-  padding: 0.5rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Logo Container */
 .logoContainer {
   padding: 0;
-  margin: 0;
+  margin: 1rem 0;
   width: 3rem;
   height: 3rem;
   display: flex;
@@ -34,7 +35,7 @@ And using the display properties
 .logo {
   font-size: 2rem;
   font-weight: 700;
-  margin: 0.5rem 0.3rem;
+  margin: 0.5rem 0.1rem;
 }
 
 .navItems {
@@ -66,7 +67,7 @@ And using the display properties
   height: 3px;
   width: 0;
   left: 0;
-  bottom: -5px;
+  bottom: -0.1rem;
   transition: 900ms;
   -webkit-transition: 900ms;
   -moz-transition: 900ms;
@@ -88,4 +89,62 @@ And using the display properties
   -ms-border-radius: 0.2rem;
   -o-border-radius: 0.2rem;
   box-shadow: 3px 3px 15px 1px rgba(99, 95, 95, 0.25);
+}
+
+.category {
+  position: absolute;
+  margin: 0;
+  top: 5rem;
+  left: 48.5rem;
+  width: 10rem;
+  height: 15rem;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.categoryClose {
+  display: none;
+}
+
+.listType {
+  list-style-type: none;
+  margin: 0.6rem 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.listType:hover {
+  filter: none;
+  -webkit-filter: none;
+}
+
+.listType:after {
+  content: '';
+  position: absolute;
+  background-color: #32fd;
+  width: 0;
+  height: 0.2rem;
+  left: 0;
+  bottom: -0.3rem;
+  transition: 900ms;
+  -webkit-transition: 900ms;
+  -moz-transition: 900ms;
+  -ms-transition: 900ms;
+  -o-transition: 900ms;
+}
+
+.listType:hover:after {
+  width: 100%;
 }
