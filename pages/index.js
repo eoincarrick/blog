@@ -1,7 +1,6 @@
 import Head from 'next/head';
 
-export default function Home({ data }) {
-  console.log(data);
+export default function Home() {
   return (
     <div className=''>
       <Head>

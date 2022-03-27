@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'next/link';
 import css from '../styles/Header.module.css';
-import {Items as items} from './index'
+import { Items } from './Items';
 
 const Header = () => {
   return (
@@ -13,11 +13,11 @@ const Header = () => {
 
         <div className={css.navContainer}>
           <ul className={css.navItems}>
-            {
-              items.map((item, index) => (
-
-              ))
-            }
+            {Items.map((item, index) => (
+              <Link>
+                <span>{item}</span>
+              </Link>
+            ))}
           </ul>
         </div>
       </nav>
