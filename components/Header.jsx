@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'next/link';
+import Link from 'next/link';
 import css from '../styles/Header.module.css';
 import { Items } from './Items';
 
@@ -14,8 +14,8 @@ const Header = () => {
         <div className={css.navContainer}>
           <ul className={css.navItems}>
             {Items.map((item, index) => (
-              <Link>
-                <span>{item}</span>
+              <Link key={index} href={item.url}>
+                <li className={css.item}>{item.title}</li>
               </Link>
             ))}
           </ul>

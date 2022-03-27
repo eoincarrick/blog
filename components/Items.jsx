@@ -12,7 +12,7 @@ export const Items = [
     url: '/',
   },
   {
-    title: 'Home',
-    url: '/',
+    title: 'Create Account',
+    url: '/create-account',
   },
 ];
