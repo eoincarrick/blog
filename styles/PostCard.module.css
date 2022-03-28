@@ -1,0 +1,57 @@
+.postcardContainer {
+  width: 100%;
+  max-width: 428px;
+  height: 524px;
+  background: #ffffff;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.postcardImage {
+  width: 100%;
+  max-width: 386px;
+  height: 186px;
+  object-fit: fill;
+  background: #c4c4c4;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 27px;
+}
+
+.postcardTitle {
+  width: 100%;
+  max-width: 334px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130.52%;
+  /* or 21px */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.postcardEx {
+  width: 100%;
+  max-width: 334px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 130.52%;
+  /* or 21px */
+  color: #000000;
+}
+
+.postcardCategory {
+  width: 85px;
+  background: #ffc804;
+  border-radius: 10px;
+  text-align: center;
+}
