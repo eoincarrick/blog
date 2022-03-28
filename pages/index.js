@@ -1,6 +1,16 @@
 import Head from 'next/head';
 
 export default function Home() {
+  const data = {
+    author: 'Eoin Carrick',
+    author_img: 'https://images2.imgbox.com/e4/79/F8vkmw4I_o.jpg',
+    post_title: 'The best practice to mastering ReactJS, and NextJs.',
+    post_content:
+      "Two of Zan 's biggest priorities are his clients and his drivers. His clients know this because of the on-time deliveries. His CDL drivers know this because of how Sharp Trucking is run. Zan works hard with the office teams to ensure that all of their drivers stay happy and healthy while they are out on the road. With perks including new trucks every three years, and monthly mileage and safety bonuses, Sharp Transportation is a company that is here for its employees. With Sharp Transportation, you will never have to worry about having enough miles. There is consistent freight, so there is always work if you want it. Zan and the team have worked hard to provide pre-planned dispatch. This means that you wont have to wait forever at the dock. We even offer a rider program. All CDL drivers get all of their benefits within 90 days of driving for Sharp Transportation. After all, the best way to have a successful logistics company is to be sure that your drivers are just as successful. ",
+    post_ex:
+      "Two of Zan's biggest priorities are his clients and his drivers. His clients know this because of the on-time deliveries. His CDL drivers know this because of how Sharp Trucking is run.",
+    post_img: 'https://images2.imgbox.com/93/45/GOJOQroq_o.jpg',
+  };
   return (
     <div className=''>
       <Head>

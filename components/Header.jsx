@@ -25,10 +25,8 @@ const Header = () => {
           </div>
         </div>
 
-        <div
-          className={`${showMenu ? css.navContainer : css.navContainerClose}`}
-        >
-          <ul className={css.navItems}>
+        <div className={`${css.navContainer}`}>
+          <ul className={` ${!showMenu ? css.navItems : css.navItemsClose}`}>
             <Link href='/'>
               <li onClick={handleClickMenu} className={`${css.item}`}>
                 Home
@@ -91,16 +89,18 @@ const Header = () => {
             </div>
 
             <Link href='/create-account'>
-              <li className={`${css.item}`}>Create Account</li>
+              <li onClick={handleClickMenu} className={`${css.item}`}>
+                Create Account
+              </li>
             </Link>
           </ul>
         </div>
 
         <div onClick={handleClickMenu} className={css.buttonContainer}>
           {showMenu ? (
-            <FaTimes className={css.iconsTimes} />
-          ) : (
             <FaBars className={css.icons} />
+          ) : (
+            <FaTimes className={css.iconsTimes} />
           )}
         </div>
       </nav>
