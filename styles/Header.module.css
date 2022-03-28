@@ -37,6 +37,10 @@ And using the display properties
   margin: 0.5rem 0.1rem;
 }
 
+.navContainerClose {
+  display: none;
+}
+
 .navItems {
   display: flex;
   gap: 1rem;
@@ -154,10 +158,15 @@ And using the display properties
 
 .buttonContainer {
   display: none;
+  padding: 1rem;
 }
 
-.icons {
-  font-size: 1.2rem;
+.icon {
+  transform: translate(-0.3rem, 0.3rem);
+  -webkit-transform: translate(-0.3rem, 0.3rem);
+  -moz-transform: translate(-0.3rem, 0.3rem);
+  -ms-transform: translate(-0.3rem, 0.3rem);
+  -o-transform: translate(-0.3rem, 0.3rem);
 }
 
 @media only screen and (max-width: 428px) {
@@ -166,8 +175,17 @@ And using the display properties
     z-index: 10;
   }
 
+  .iconsTimes,
   .icons {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+  }
+
+  .iconsTimes {
+    transform: translate(1.2rem, -1.6rem);
+    -webkit-transform: translate(1.2rem, -1.6rem);
+    -moz-transform: translate(1.2rem, -1.6rem);
+    -ms-transform: translate(1.2rem, -1.6rem);
+    -o-transform: translate(1.2rem, -1.6rem);
   }
 
   .navContainer {
