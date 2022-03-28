@@ -3,7 +3,6 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  border-bottom: 0.01rem solid black;
 }
 
 /* Adding padding to the "nav" element
@@ -95,7 +94,6 @@ And using the display properties
   position: absolute;
   margin: 0;
   top: 5rem;
-  left: 48.5rem;
   width: 10rem;
   height: 15rem;
   color: rgb(0, 0, 0);
@@ -109,6 +107,11 @@ And using the display properties
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  transform: translateX(-2rem);
+  -webkit-transform: translateX(-2rem);
+  -moz-transform: translateX(-2rem);
+  -ms-transform: translateX(-2rem);
+  -o-transform: translateX(-2rem);
 }
 
 .categoryClose {
@@ -147,4 +150,86 @@ And using the display properties
 
 .listType:hover:after {
   width: 100%;
+}
+
+.buttonContainer {
+  display: none;
+}
+
+.icons {
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 428px) {
+  .buttonContainer {
+    display: block;
+    z-index: 10;
+  }
+
+  .icons {
+    font-size: 1.2rem;
+  }
+
+  .navContainer {
+    background-color: #dfdfdf;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .navContainer,
+  .navItems {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navItems {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item {
+    transform: translateX(-1rem);
+    -webkit-transform: translateX(-1rem);
+    -moz-transform: translateX(-1rem);
+    -ms-transform: translateX(-1rem);
+    -o-transform: translateX(-1rem);
+  }
+
+  .category {
+    position: relative;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    order: 1;
+  }
+
+  .item:last-child {
+    font-weight: 700;
+    color: #000000;
+    background-color: transparent;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+    box-shadow: 3px 3px 15px 1px rgba(99, 95, 95, 0.25);
+  }
+
+  .nav {
+    padding: 0.5rem;
+    justify-content: space-between;
+  }
 }
